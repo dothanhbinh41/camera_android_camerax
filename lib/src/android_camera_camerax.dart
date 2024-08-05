@@ -1014,6 +1014,7 @@ class AndroidCameraCameraX extends CameraPlatform {
   Future<void> startVideoRecording(int cameraId,
       {Duration? maxVideoDuration}) async {
     // Ignore maxVideoDuration, as it is unimplemented and deprecated.
+    print("aaaaaaaaaaaaaaaaaaaaa");
     return startVideoCapturing(VideoCaptureOptions(cameraId));
   }
 
