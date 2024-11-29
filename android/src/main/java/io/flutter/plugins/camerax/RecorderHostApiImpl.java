@@ -54,6 +54,9 @@ public class RecorderHostApiImpl implements RecorderHostApi {
     if (aspectRatio != null) {
       recorderBuilder.setAspectRatio(aspectRatio.intValue());
     }
+    if(bitRate == null){
+      bitRate = 1000000;
+    }
     if (bitRate != null) {
       recorderBuilder.setTargetVideoEncodingBitRate(bitRate.intValue());
     }
